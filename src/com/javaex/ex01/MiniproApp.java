@@ -83,7 +83,12 @@ public class MiniproApp {
 				if(cho == 3) {
 					System.out.println("<3.삭제>");
 					System.out.print("<번호 : " );
+					Reader r = new FileReader("C:\\javaStudy\\PhoneDB.txt");
+					BufferedReader br = new BufferedReader(r);
 					int re = sc.nextInt();
+					pList.remove(re);
+					
+					System.out.println("<삭제 되었습니다.>");
 					
 				}
 				
